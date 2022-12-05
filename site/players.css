@@ -1,0 +1,46 @@
+.devs-wrap {
+    position: relative;
+    width: 100%;
+    height: 725px;
+}
+
+.devs-container {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    width: calc(100% - 300px);
+    height: calc(100% - 50px);
+    color: white;
+    text-align: center;
+}
+
+.players-row {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.player-card {
+    height: 100%;
+    width: 50%;
+    max-width: 350px;
+    background-size: cover;
+}
+
+.player-username {
+    text-align: center;
+}
+
+.krazzzzy {
+    background: url(https://raw.githubusercontent.com/ferderplays/CatalystWebsiteSubmition/main/assets/Krazzzzymonkey.png) no-repeat;
+}
+
+.prerox {
+    background: url(https://raw.githubusercontent.com/ferderplays/CatalystWebsiteSubmition/main/assets/Pr3roxDLC.png) no-repeat;
+}
+
+.lilganja {
+    background: url(./img/players/LilGanja1337.png) no-repeat;
+}
