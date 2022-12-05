@@ -59,3 +59,9 @@
         fill: #00B3B3;
     }  
 }
+
+@media screen and (max-width: 800px) {
+    .title-text {
+        width: 450px;
+    }
+}
