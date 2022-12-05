@@ -1,0 +1,392 @@
+body {
+    font-family: Roboto, sans-serif
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: #3e3e3e
+}
+
+.fadein {
+    animation: fadein 2.5s;
+    -moz-animation: fadein 2.5s;
+    -webkit-animation: fadein 2.5s;
+    -o-animation: fadein 2.5s
+}
+
+header {
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    position: relative;
+    z-index: 10;
+    -webkit-transform: translateZ(100px);
+    transform: translateZ(100px);
+    -webkit-animation: step-one-title-in 1.3s;
+    animation: step-one-title-in 1.3s
+}
+
+header .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%)
+}
+
+header .inner img {
+    width: 500px;
+    height: auto
+}
+
+header .inner p {
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    padding: 10px;
+    overflow: hidden;
+    max-height: 61px;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0
+}
+
+main {
+    margin-top: 60px;
+    margin-bottom: 100px
+}
+
+main .results-wrap {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background: #101010;
+    z-index: 20
+}
+
+footer p.copyright {
+    text-align: center;
+    color: #ccc;
+    font-size: 15px
+}
+
+footer p.copyright a {
+    color: #ccc;
+    text-decoration: underline solid #ccc;
+    transition: text-decoration .3s ease
+}
+
+footer p.copyright a:hover {
+    color: #ccc;
+    text-decoration: underline solid transparent
+}
+
+footer p.copyright span.lower {
+    margin-top: 5px;
+    display: block
+}
+
+@keyframes blink {
+    0% {
+        background-color: #ccc
+    }
+    49% {
+        background-color: #ccc
+    }
+    50% {
+        background-color: transparent
+    }
+    99% {
+        background-color: transparent
+    }
+    100% {
+        background-color: #ccc
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        background-color: #ccc
+    }
+    49% {
+        background-color: #ccc
+    }
+    50% {
+        background-color: transparent
+    }
+    99% {
+        background-color: transparent
+    }
+    100% {
+        background-color: #ccc
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        background-color: #ccc
+    }
+    49% {
+        background-color: #ccc
+    }
+    50% {
+        background-color: transparent
+    }
+    99% {
+        background-color: transparent
+    }
+    100% {
+        background-color: #ccc
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes loader {
+    0%, 100%, 80% {
+        box-shadow: 0 2.5em 0 -1.3em
+    }
+    40% {
+        box-shadow: 0 2.5em 0 0
+    }
+}
+
+@-moz-keyframes loader {
+    0%, 100%, 80% {
+        box-shadow: 0 2.5em 0 -1.3em
+    }
+    40% {
+        box-shadow: 0 2.5em 0 0
+    }
+}
+
+@-webkit-keyframes loader {
+    0%, 100%, 80% {
+        box-shadow: 0 2.5em 0 -1.3em
+    }
+    40% {
+        box-shadow: 0 2.5em 0 0
+    }
+}
+
+.container {
+    width: 60%;
+    height: auto;
+    border: 3px solid #38ba94;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .47);
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    color: #fff
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-between
+}
+
+.flex-box-2 {
+    display: flex;
+    justify-content: left
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: 0;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, red, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, red);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px
+}
+
+.glow:before {
+    content: '';
+    background: linear-gradient(45deg, red, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, red);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px
+}
+
+.glow:hover:before {
+    opacity: 1
+}
+
+.glow:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0
+    }
+    50% {
+        background-position: 400% 0
+    }
+    100% {
+        background-position: 0 0
+    }
+}
+
+@-webkit-keyframes unlock-btn {
+    from {
+        border-radius: 5px
+    }
+    to {
+        border-radius: 8px
+    }
+}
+
+@keyframes unlock-btn {
+    from {
+        border-radius: 5px
+    }
+    to {
+        border-radius: 8px
+    }
+}
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+    border: 3px solid #38ba94;
+    border-radius: 5px
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: ''
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.spacer {
+    font-size: 1vh
+}
+
+@media screen and (max-width: 800px) {
+    .video-container {
+        overflow: hidden;
+        position: relative;
+        width: 90%
+    }
+
+    .spacer {
+        font-size: 4.1vh
+    }
+
+    .flex-box {
+        display: block;
+        padding-bottom: 10px;
+        justify-content: center;
+        text-align: center
+    }
+
+    .container {
+        width: 90%
+    }
+}
