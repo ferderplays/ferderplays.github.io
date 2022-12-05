@@ -214,7 +214,7 @@ footer p.copyright span.lower {
 .container {
     width: 60%;
     height: auto;
-    border: 3px solid #38ba94;
+    border: 3px solid #00B3B3;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, .47);
     margin-right: auto;
@@ -346,7 +346,7 @@ footer p.copyright span.lower {
     overflow: hidden;
     position: relative;
     width: 70%;
-    border: 3px solid #38ba94;
+    border: 3px solid #00B3B3;
     border-radius: 5px
 }
 
