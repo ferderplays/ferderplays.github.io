@@ -41,8 +41,7 @@
     100% {
         stroke-dashoffset: 0;
         fill: #00B3B3;
-        }
-         
+    }    
 }
 
 @keyframes svg-bracket-anim {
@@ -62,6 +61,6 @@
 
 @media screen and (max-width: 800px) {
     .title-text {
-        width: 450px;
+        width: 300px;
     }
 }
