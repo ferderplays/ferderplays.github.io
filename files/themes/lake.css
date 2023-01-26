@@ -1,0 +1,129 @@
+/**
+ * App
+ */
+
+ .appMount-2yBXZl {
+    background: var(--wbg);
+}
+
+/**
+ * Textarea
+ */
+.scrollableContainer-15eg7h,
+.attachedBars-2BCP3l,
+.clipContainer-31nYlH{
+    background: var(--bg);
+    border-radius: var(--theme-roundness);
+}
+ 
+.attachedBars-2BCP3l{
+    margin-bottom: 4px;
+}
+ 
+.attachButtonInner-2mwer8 svg path{
+    fill: rgb(55, 55, 55);
+}
+ 
+.attachedBars-2BCP3l svg path:hover {
+    fill: rgb(100, 100, 100);
+}
+ 
+/** 
+ * Usernames
+ */
+ 
+.username-h_Y3Us {
+    font-family: 'Minecraft Evenings', monospace;
+}
+ 
+/**
+ * BetterDiscord
+ */
+ 
+.bd-switch .bd-switch-body {
+    background: rgba(230, 0, 0, 0.5);
+}
+ 
+.bd-switch .bd-switch-handle {
+    fill: black;
+}
+ 
+.bd-switch-checked .bd-switch-body {
+    background: var(--theme-bg);
+}
+ 
+/** 
+ * roundness
+ */
+ 
+.container-32HW5s .interactive-1vLZ_I.interactive-iyXY_x,  
+    .content-1gYQeQ,
+    .item-3XjbnG.themed-2-lozF,
+    .changePasswordButton-3j5UVD,
+    .flexChild-3PzYmX button,
+    .buttonContainer-cmXa0P button,
+    .buttonsContainer-12kYno button,
+    .buttonsContainer-5mLFN9 button,
+    .button-f2h6uQ,
+    .card-16VQ8C,
+    .connection-YOVI9j,
+    .guild-2Fq4I5,
+    .detailsBlock-24pLFz,
+    .inputWrapper-1YNMmM input,
+    .item-2idW98,
+    .select-1Ia3hD,
+    .layout-1qmrhw,
+    .wrapper-2vIMkT
+    {
+    border-radius: var(--theme-roundness);
+ }
+ 
+/**
+ *Channel Tabs 
+ */
+ 
+.channelTabs-newTab {
+    background: var(--theme-bg);
+    color: rgba(100, 100, 100, 0.5);
+}
+ 
+.channelTabs-newTab:hover {
+    background: rgba(100, 100, 100, 0.5);
+    color: var(--theme-bg);
+}
+ 
+.channelTabs-tabContainer {
+    padding: 10px;
+    background: transparent;
+    border-top-right-radius: var(--theme-roundness);
+    border-top-left-radius: var(--theme-roundness);
+}
+ 
+.channelTabs-tabNav {
+    background: var(--theme-bg);
+    border-radius: var(--theme-roundness);
+}
+ 
+.channelTabs-tab:not(.channelTabs-selected),
+    .channelTabs-tab.channelTabs-selected,
+    .avatarWrapper-1B9FTW.withTagAsButton-OsgQ9L 
+    {
+    border-radius: var(--theme-roundness);
+}
+ 
+/**
+ * Date Viewer
+ */
+ 
+#dv-mount {
+    height: 75px;
+}
+ 
+#dv-main {
+    background: transparent;
+    width: calc(100% - 10px);
+}
+ 
+#dv-main .dv-time {
+    font-size: 15px;
+}
