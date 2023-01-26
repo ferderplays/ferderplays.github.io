@@ -2,7 +2,7 @@
  * App
  */
 
- .appMount-2yBXZl {
+.appMount-2yBXZl, body {
     background: var(--wbg);
 }
 
