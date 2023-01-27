@@ -57,6 +57,25 @@
     background-size: cover;
 }
 
+.container-2cd8Mz {
+    background: var(--bg2);
+}
+
+.nowPlayingColumn-1eCBCN,
+    .container-1oAagU,
+    .wrapper-2RrXDg,
+    .theme-dark .scroller-WSmht3,
+    .theme-light .scroller-WSmht3,
+    .contentRegion-3HkfJJ
+    {
+    background: var(--bg3);
+}
+
+.sidebarRegionScroller-FXiQOh,
+    .contentRegionScroller-2_GT_N {
+    background: var(--bg);
+}
+
 /**
  * Server list
  */
