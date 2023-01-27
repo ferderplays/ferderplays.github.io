@@ -3,7 +3,7 @@
  * App
  */
 
-* {
+ * {
     font-family: var(--font);
 }
 
@@ -34,7 +34,9 @@
     .member-48YF_l, 
     .members-3WRCEx,
     .container-1NXEtd,
-    .wrapper-1_HaEi {
+    .wrapper-1_HaEi,
+    .chatContent-3KubbW 
+    {
     background: var(--bg3);
 }
 
@@ -49,11 +51,11 @@
 /**
  * Textarea
  */
-.scrollableContainer-15eg7h,
-.attachedBars-2BCP3l,
-.clipContainer-31nYlH{
+
+.theme-dark .scrollableContainer-15eg7h, 
+.theme-light .scrollableContainer-15eg7h 
+    {
     background: var(--bg);
-    border-radius: var(--theme-roundness);
 }
  
 .attachedBars-2BCP3l{
@@ -113,7 +115,9 @@
     .item-2idW98,
     .select-1Ia3hD,
     .layout-1qmrhw,
-    .wrapper-2vIMkT
+    .wrapper-2vIMkT,
+    .channelTextArea-1VQBuV,
+    .scrollableContainer-15eg7h
     {
     border-radius: var(--theme-roundness);
  }
