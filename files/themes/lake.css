@@ -1,10 +1,50 @@
+
 /**
  * App
  */
 
-.appMount-2yBXZl, body {
-    background: var(--wbg);
+* {
+    font-family: var(--font);
 }
+
+#app-mount {
+    background: var(--bg);
+}
+
+.app-2CXKsg {
+    padding: 10px;
+}
+
+.layers-OrUESM, .layers-1YQhyW {
+    border-radius: var(--theme-roundness);
+}
+
+.bg-1QIAus {
+    padding: 10px;
+    background: var(--wbg) no-repeat;
+    background-size: cover;
+}
+
+.chat-2ZfjoI, 
+    .container-ZMc96U.themed-Hp1KC_ {
+    background: var(--bg2);
+}
+
+.container-2o3qEW, 
+    .member-48YF_l, 
+    .members-3WRCEx,
+    .container-1NXEtd,
+    .wrapper-1_HaEi {
+    background: var(--bg3);
+}
+
+.member-48YF_l {
+    border-radius: var(--theme-roundness);
+}
+
+/**
+ * Server list
+ */
 
 /**
  * Textarea
@@ -88,7 +128,7 @@
 }
  
 .channelTabs-newTab:hover {
-    background: rgba(100, 100, 100, 0.5);
+    background: var(--bg2);
     color: var(--theme-bg);
 }
  
