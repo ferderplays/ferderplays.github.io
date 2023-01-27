@@ -48,6 +48,13 @@
     border-radius: var(--theme-roundness);
 }
 
+
+.theme-dark .scroller-3X7KbA,
+    .theme-light .scroller-3X7KbA 
+    {
+        background: var(--bg2);
+}
+
 /**
  * Server list
  */
