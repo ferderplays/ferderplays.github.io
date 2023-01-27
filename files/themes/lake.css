@@ -159,9 +159,11 @@
  * Date Viewer
  */
  
-#dv-mount {
-    height: 75px;
+ 
+ #dv-mount {
+    height: 50px;
 }
+ 
  
 #dv-main {
     background: transparent;
