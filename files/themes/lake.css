@@ -7,9 +7,6 @@
     font-family: var(--font);
 }
 
-#app-mount {
-    background: var(--bg);
-}
 
 .app-2CXKsg {
     padding: 10px;
@@ -40,24 +37,33 @@
     background: var(--bg3);
 }
 
-.member-48YF_l {
-    border-radius: var(--theme-roundness);
+
+/** 
+ * Background Stuff
+ */
+
+.overlayBackground-1KgwVi,
+    .theme-dark .scroller-3X7KbA,
+    .theme-light .scroller-3X7KbA  {
+    background: var(--bg2);
 }
 
-.panels-3wFtMD {
-    border-radius: var(--theme-roundness);
+#app-mount {
+    background: var(--bg);
 }
 
-
-.theme-dark .scroller-3X7KbA,
-    .theme-light .scroller-3X7KbA 
-    {
-        background: var(--bg2);
+.userProfileInnerThemedNonPremium-1gT-zY {
+    background: var(--wbg);
+    background-size: cover;
 }
 
 /**
  * Server list
  */
+
+.expandedFolderBackground-1kSAf6 {
+    background: var(--bg);
+}
 
 /**
  * Textarea
@@ -86,7 +92,7 @@
  */
  
 .username-h_Y3Us {
-    font-family: 'Minecraft Evenings', monospace;
+    font-family: var(--font-2), monospace;
 }
  
 /**
@@ -128,7 +134,9 @@
     .layout-1qmrhw,
     .wrapper-2vIMkT,
     .channelTextArea-1VQBuV,
-    .scrollableContainer-15eg7h
+    .scrollableContainer-15eg7h,
+    .member-48YF_l,
+    .panels-3wFtMD
     {
     border-radius: var(--theme-roundness);
  }
@@ -164,23 +172,4 @@
     .avatarWrapper-1B9FTW.withTagAsButton-OsgQ9L 
     {
     border-radius: var(--theme-roundness);
-}
- 
-/**
- * Date Viewer
- */
- 
- 
- #dv-mount {
-    height: 10px;
-}
- 
- 
-#dv-main {
-    background: transparent;
-    width: calc(100% - 10px);
-}
- 
-#dv-main .dv-time {
-    font-size: 15px;
 }
