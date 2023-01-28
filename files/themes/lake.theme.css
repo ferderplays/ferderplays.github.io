@@ -19,8 +19,8 @@
     --bg: rgba(0, 255, 0, 0.5);
     --bg2: rgba(255, 255, 255, 0.25);
     --bg3: rgba(35, 35, 35, 0.25);
-    --font: 'Minecraft', 'Zen Kurenaido';
-    --font-2: 'Minecraft Evenings';
+    --font: 'Zen Kurenaido', monospace;
+    --font-2: 'Love Light';
 
     /* Radial Status*/
     --rs-small-spacing: 2px;
