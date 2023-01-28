@@ -73,10 +73,43 @@
 
 .sidebarRegionScroller-FXiQOh,
     .contentRegionScroller-2_GT_N {
-    background: var(--bg);
+    background: var(--bg4);
 }
 
+.sidebar-1tnWFu,
+    .theme-dark .scroller-WSmht3,
+    .theme-light .scroller-WSmht3, 
+    .root-g14mjS {
+    background: var(--bg4);
+}
 
+.quickswitcher-pKcM9U {
+    background: var(--bg4);
+    border-radius: var(--theme-roundness);
+}
+
+/**
+ * Search bars
+ */
+
+.searchBar-3TnChZ {
+    background: var(--bg4);
+}
+
+.scroller-2qwVWY {
+    background: var(--bg);
+    border-radius: calc(var(--theme-roundness) / 2);
+}
+
+.searchBar-3TnChZ .searchBarComponent-3N7dCG,
+    .searchBar-2aylmZ,
+    .input-3r5zZY,
+    .container-1SX9VC,
+    .lookFilled-yCfaCM.colorBrand-I6CyqQ
+    {
+    background: var(--bg);
+    border-radius: var(--theme-roundness);
+}
 
 .theme-dark .container-1NXEtd,
     .theme-light .container-1NXEtd 
@@ -88,6 +121,36 @@
     .theme-light .container-YkUktl {
     background: var(--bg);
     border-radius: var(--theme-roundness);
+}
+
+/**
+ * Search results
+ */
+ 
+.searchResultsWrap-5RVOkx {
+    background: var(--bg4);
+    border-radius: var(--theme-roundness);
+}
+
+.searchHeader-1r_ZSh,
+    .searchResult-O9NDji,
+    .theme-dark .perk-19D_HN,
+    .theme-light .perk-19D_HN {
+    background: var(--bg);
+}
+
+.searchHeader-1r_ZSh,
+    .searchResult-O9NDji {
+    border-radius: var(--theme-roundness);
+}
+
+/**
+ * Server Boosting
+ */
+
+.theme-dark .perksModal-CLcR1c,
+    .theme-light .perksModal-CLcR1c {
+    background: var(--bg2);
 }
 
 /**
