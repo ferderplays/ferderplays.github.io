@@ -236,6 +236,57 @@
     {
     border-radius: var(--theme-roundness);
  }
+
+
+/**
+ * Other
+ */
+
+ .container-2McqkF, 
+ .container-18GwIk,
+ .searchBox-3IjAC1,
+ .menu-1QACrS,
+ .messagesPopoutWrap-3zryHW,
+ .container-2ebMPP
+ {
+ background: var(--bg4);
+ border-radius: var(--theme-roundness);
+}
+
+.theme-dark .focused-2FU0YH,
+ .theme-light .focused-2FU0YH,
+ .header-3_zmOb,
+ .container-2rzKKA,
+ .colorDefault-CDqZdO.focused-3qFvc8,
+ .header-1w9Q93,
+ .messageGroupWrapper-1jf_7C,
+ .bigPerkCard-1uwmWV,
+ .smallPerkCard-2sX_--,
+ .actionButton-3-B2x-,
+ .messageContainer-3VTXBC,
+ .messages-23can0
+ {
+ background: var(--bg);
+}
+
+.messageGroupWrapper-1jf_7C,
+ .container-32HW5s,
+ .colorDefault-CDqZdO.focused-3qFvc8,
+ .container-2rzKKA,
+ .messageContainer-3VTXBC,
+ .messages-23can0 {
+ border-radius: var(--theme-roundness);
+}
+
+.applicationStore-2nk7Lo {
+ background: var(--bg2);
+}
+
+.scroller-29cQFV,
+ .channelHeader-DFRX8q {
+ background: var(--bg4);
+}
+ 
  
 /**
  *Channel Tabs 
