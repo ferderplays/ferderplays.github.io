@@ -298,6 +298,15 @@
 [data-slate-string] {
     color: var(--fg2);
 }
+
+.childWrapper-1j_1ub {
+    background: var(--homo-logo);
+    background-size: cover;
+}
+
+.homeIcon-r0w4ny {
+    display: none;
+}
  
 /**
  *Channel Tabs 
