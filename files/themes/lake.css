@@ -286,7 +286,13 @@
  .channelHeader-DFRX8q {
  background: var(--bg4);
 }
- 
+
+.replyBar-1oi75v, 
+    .threadSuggestionBar-3ExSyc,
+    .channelTextArea-1FufC0,
+    .attachedBars-2BCP3l {
+    background: var(--bg4);
+}  
  
 /**
  *Channel Tabs 
