@@ -238,7 +238,6 @@
     border-radius: var(--theme-roundness);
  }
 
-
 /**
  * Other
  */
@@ -293,21 +292,45 @@
     .channelTextArea-1FufC0,
     .attachedBars-2BCP3l {
     background: var(--bg4);
-}  
+} 
 
 [data-slate-string] {
     color: var(--fg2);
 }
 
 .childWrapper-1j_1ub {
-    background: var(--homo-logo);
+    background: var(--home-logo);
     background-size: cover;
 }
 
 .homeIcon-r0w4ny {
     display: none;
 }
- 
+
+.modeSelected-3DmyhH .content-1gYQeQ, 
+    .modeSelected-3DmyhH:hover .content-1gYQeQ {
+    background: var(--bg);
+}
+
+.messageListItem-ZZ7v6g {
+    animation: var(--anim-cooldown) test-anim linear;
+}
+
+@keyframes test-anim {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+    50% {
+        left: -50%;
+        opacity: 0.5;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
 /**
  *Channel Tabs 
  */
