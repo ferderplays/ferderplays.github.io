@@ -331,6 +331,10 @@
     }
 }
 
+.buttonText-1c-l_x {
+    color: var(--fg2);
+}
+
 /**
  *Channel Tabs 
  */
