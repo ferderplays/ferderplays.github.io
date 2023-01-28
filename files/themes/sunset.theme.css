@@ -1,0 +1,29 @@
+/** 
+* @name Sunset
+* @version 2.0.0
+* @author ferderplays
+* @description A cool sunset theme, thats also transparent
+*/
+
+@import url('https://ferderplays.github.io/files/themes/lake.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css');
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.cdnfonts.com/css/minecraft-evenings');
+@import url('https://fonts.cdnfonts.com/css/minecraft-3');
+
+/* root */
+:root {
+    --wbg: url('https://ferderplays.github.io/files/pics/bg.png');
+    --homo-logo: url('https://ferderplays.github.io/files/pics/logo.png');
+    --theme-roundness: 25px;
+    --bg: rgb(225, 191, 100);
+    --bg2: rgba(50, 50, 50, 0.25);
+    --bg3: rgba(35, 35, 35, 0.25);
+    --bg4: rgba(20, 20, 20, 0.5);
+    --fg: rgb(245, 245, 245);
+    --fg2: rgb(10, 10, 10);
+    --anim-cooldown: 0.25s;
+    --font: 'Zen Kurenaido', monospace;
+    --font-2: 'Love Light';
+}
