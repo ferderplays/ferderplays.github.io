@@ -9,8 +9,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat');
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css');
 @import url('https://fonts.googleapis.com/css2?family=Love+Light&family=Zen+Kurenaido&display=swap');
-@import url('https://fonts.cdnfonts.com/css/minecraft-evenings');
-@import url('https://fonts.cdnfonts.com/css/minecraft-3');
 
 /* root */
 :root {
@@ -19,6 +17,7 @@
     --bg: rgba(0, 255, 0, 0.5);
     --bg2: rgba(255, 255, 255, 0.25);
     --bg3: rgba(35, 35, 35, 0.25);
+    --bg4: rgb(15, 15, 15);
     --font: 'Zen Kurenaido', monospace;
     --font-2: 'Love Light';
 

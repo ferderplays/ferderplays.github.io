@@ -76,6 +76,20 @@
     background: var(--bg);
 }
 
+
+
+.theme-dark .container-1NXEtd,
+    .theme-light .container-1NXEtd 
+    {
+    background: var(--bg4);
+}
+
+.theme-dark .container-YkUktl,
+    .theme-light .container-YkUktl {
+    background: var(--bg);
+    border-radius: var(--theme-roundness);
+}
+
 /**
  * Server list
  */
