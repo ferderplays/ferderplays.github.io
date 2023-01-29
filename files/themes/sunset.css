@@ -316,6 +316,8 @@
     background: var(--bg);
 }
 
+/* Animations */
+
 .messageListItem-ZZ7v6g {
     animation: var(--anim-cooldown) test-anim linear;
 }
@@ -334,6 +336,36 @@
         opacity: 1;
     }
 }
+
+.sidebar-1tnWFu {
+    width: 50px;
+    transition: all var(--anim-cooldown) linear;
+}
+
+.sidebar-1tnWFu .nameTag-sc-gpq,
+    .sidebar-1tnWFu .flex-2S1XBF {
+    display: none;
+    transition: all var(--anim-cooldown) linear;
+}
+
+.sidebar-1tnWFu:hover {
+    width: 240px;
+}
+
+.sidebar-1tnWFu:hover .nameTag-sc-gpq
+    {
+    display: block;
+}
+
+.sidebar-1tnWFu:hover .flex-2S1XBF {
+    display: flex;
+}
+
+.section-3FmfOT {
+    text-align: center;
+}
+
+/* Other */
 
 .buttonText-1c-l_x {
     color: var(--fg2);
