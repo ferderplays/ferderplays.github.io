@@ -339,6 +339,10 @@
     color: var(--fg2);
 }
 
+.children-3xh0VB:after {
+    display: none;
+}
+
 /**
  *Channel Tabs 
  */
