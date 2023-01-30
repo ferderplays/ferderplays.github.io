@@ -375,6 +375,17 @@
     display: none;
 }
 
+.overflow-1wOqNV {
+    text-align: center;
+    color: var(--bg);
+}
+
+.text-xs-bold-9jfMvZ, .text-xs-semibold-GgBYxI {
+    width: 25px;
+    height: 19px;
+    overflow: hidden;
+}
+
 /**
  *Channel Tabs 
  */
