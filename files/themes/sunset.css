@@ -70,6 +70,7 @@
     .contentRegion-3HkfJJ
     {
     background: var(--bg3);
+    transition: all var(--anim-cooldown);
 }
 
 .sidebarRegionScroller-FXiQOh,
