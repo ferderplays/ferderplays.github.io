@@ -368,6 +368,27 @@
     text-align: center;
 }
 
+.nowPlayingColumn-1eCBCN {
+    min-width: 0;
+    max-width: var(--sidebar-width);
+    width: var(--sidebar-width);
+    transition: all var(--anim-cooldown) linear;
+}
+
+.nowPlayingColumn-1eCBCN .itemCard-3Etziu {
+    width: 0;
+    transition: all var(--anim-cooldown) linear;
+}
+
+.nowPlayingColumn-1eCBCN:hover {
+    min-width: 360px;
+    max-width: 420px;
+}
+
+.nowPlayingColumn-1eCBCN:hover .itemCard-3Etziu {
+    width: 100%;
+}
+
 /* Other */
 
 .buttonText-1c-l_x {
