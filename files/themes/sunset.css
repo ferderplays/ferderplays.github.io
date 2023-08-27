@@ -196,6 +196,7 @@
 .username-h_Y3Us {
     font-size: var(--username-size);
     font-family: var(--font-2), monospace;
+    font-weight: var(--username-weight);
 }
  
 /**
