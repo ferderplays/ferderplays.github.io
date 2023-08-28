@@ -442,3 +442,50 @@
     {
     border-radius: var(--theme-roundness);
 }
+
+/* User profiles*/
+
+.userProfileInner-1ngKnf {
+    background: transparent;
+}
+
+.overlayBackground-2aa7wt {
+    background: var(--bg4);
+}
+
+.userProfileOuterUnthemed-11rPfA {
+    background: var(--bg2);
+}
+
+.avatarWrapper-eenWra {
+    left: 50%;
+    top: 25px;
+    translate: -50% 0;
+}
+
+circle {
+    fill: none;
+}
+
+.root-1CAIjD {
+    background-color: var(--bg2);
+}
+
+/* Add Server */
+
+.title-1_TkpU, .text-md-normal-2rFCH3 {
+    color: var(--bg);
+}
+
+.text-PdAsFQ {
+    color: var(--bg4);
+    transition: all var(--anim-cooldown) linear;
+}
+
+.container-x8Y1ix, .footer-IubaaS{
+    background: var(--bg);
+}
+
+.container-x8Y1ix:hover .text-PdAsFQ {
+    color: var(--bg);
+}
