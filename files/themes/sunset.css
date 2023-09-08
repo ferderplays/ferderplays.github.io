@@ -389,6 +389,50 @@
     width: 100%;
 }
 
+
+.horizontal-112GEH {
+    width: var(--sidebar-width);
+}
+
+.button-12Fmur[aria-label="User Settings"] {
+    left: 32px;
+}
+
+.horizontal-112GEH > .button-12Fmur[aria-label="Mute"], .horizontal-112GEH > .button-12Fmur[aria-label="Deafen"] {
+    display: none;
+    transition: all var(--anim-cooldown) linear;
+}
+
+.horizontal-112GEH:hover {
+    width: 96px;
+}
+
+.horizontal-112GEH:hover > .button-12Fmur[aria-label="Mute"], .horizontal-112GEH:hover > .button-12Fmur[aria-label="Deafen"] {
+    display: block;
+}
+
+.horizontal-112GEH:hover > .button-12Fmur[aria-label="User Settings"] {
+    left: 0;
+}
+
+.membersWrap-3NUR2t {
+    min-width: var(--sidebar-width);
+    transition: all var(--anim-cooldown) linear;
+}
+
+.members-3WRCEx {
+    width: var(--sidebar-width);
+    transition: all var(--anim-cooldown) linear;
+}
+
+.membersWrap-3NUR2t:hover {
+    min-width: 240px;
+}
+
+.membersWrap-3NUR2t:hover .members-3WRCEx {
+    width: 240px;
+}
+
 /* Other */
 
 .buttonText-1c-l_x {
