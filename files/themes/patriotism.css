@@ -1,0 +1,14 @@
+/**
+ * backgrounds 
+ */
+
+:root {
+    --link: "../pics/countries/";
+    --belgië-flag: url(var(--link) + "belgië-flag.png");
+    --israel-flag: url(var(--link) + "israel-flag.png");
+    --color-white: white;
+    --color-blue-1: #0038b8;
+    --first-color: var(--color-white);
+    --second-color: var(--color-blue-1);
+    --background-img: var(--israel-flag);
+}
