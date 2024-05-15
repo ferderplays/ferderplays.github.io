@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Kenia&family=Zen+Kurenaido&display=swap');
+
+:root {
+    --anim-length: 0.5s;
+    --anim-type: linear;
+    
+    --font: 'Zen Kurenaido', sans-serif;
+    
+    --light-theme-foreground: rgb(0, 100, 100);
+    --light-theme-background: rgb(230, 230, 230);
+    --light-theme-background-2: rgb(250, 250, 250);
+    --light-theme-box-shadow: 5px 5px 10px rgb(215, 215, 215);
+
+    --dark-theme-foreground: rgb(0, 230, 0);
+    --dark-theme-background: rgb(30, 30, 30);
+    --dark-theme-background-2: rgb(50, 50, 50);
+    --dark-theme-box-shadow: 5px 5px 10px rgb(15, 15, 15);
+
+    --card-roundness: 25px;
+    --card-padding: 20px;
+
+    --container-padding: 25px;
+
+    --header-padding: 5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    margin: 0;
+    overflow-x: hidden;
+}
+    
+.Header {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--header-padding);
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.Logo {
+    font-size: 30px;
+}
+
+.Header-Links {
+    display: flex;
+    gap: 30px;
+}
+   
+.Header-Links li {
+    position: relative;
+    top: -20px;
+    display: inline-block;
+    font-size: 30px;
+}
+ 
+.Header-Links li a {
+    text-decoration: none;
+}
+    
+.Header-Button {
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    border: none;
+    border-radius: var(--card-roundness);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.Container {
+    padding: var(--container-padding);
+}
+    
+.Box {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+    
+.Card {
+    border-radius: 25px;
+    padding: 20px;
+    width: fit-content;
+}
+    
+.Card-Title {
+    font-size: 50px;
+    padding-bottom: var(--card-padding);
+}
+    
+.Card-List li {
+    list-style: square;
+}
+    
+.Card-Par, .Card-List li {
+    font-size: 30px;
+}
+    
+.Footer {
+    height: 100px;
+    font-size: 50px;
+    text-align: center;
+}
+    
+.Space {
+    height: 150px;
+}
+
+.Visits-Container {
+    height: 250px;
+}
+
+.Card {
+    padding: 20px;
+    background: var(--light-theme-background-2);
+    box-shadow: var(--light-theme-box-shadow);
+    color: var(--light-theme-foreground);
+}
+
+.Container {
+    padding: 20px;
+}
+
+.About-Container {
+    height: 800px;
+    width: 100%;
+}
+
+.dark-theme .Card {
+    background: var(--dark-theme-background-2);
+    box-shadow: var(--dark-theme-box-shadow);
+    color: var(--dark-theme-foreground);
+}
+
+.tool-html {
+    color: #e34c26;
+}
+
+.tool-css {
+    color: #264de4;
+}
+
+.tool-js {
+    color: #f0db4f;
+}
+
+.tool-node {
+    color: #3c873a;
+}
+
+.tool-java {
+    color: red;
+}
+
+.tool-vue {
+    color: #41B883;
+}
+
+.tool-react {
+    color: #7cc5d9;
+}
+
+@import url("https://fonts.cdnfonts.com/css/minecraft-evenings");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Kenia&family=Zen+Kurenaido&display=swap");
+.Title-Container {
+  font-family: "Zen Kurenaido", sans-serif;
+  background: url(../assets/bg.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  color: rgb(0, 100, 100);
+}
+
+.Inner-Title-Box {
+  text-align: center;
+}
+
+.Title-Text {
+  font-size: 100px;
+  font-family: "Minecraft Evenings", sans-serif;
+}
+
+.Title-Description {
+  font-size: 75px;
+}
+
+.dark-theme {
+  color: rgb(0, 230, 0);
+}
+
+@media screen and (max-width: 500px) {
+  
+}
+
+@media screen and (max-width: 500px) {
+    .Box {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .Card-Title {
+        font-size: 40px;
+    }
+    
+    .Card-Par, .Card-List li {
+        font-size: 20px;
+    }
+    
+    .Footer {
+        font-size: 25px;
+    }
+
+    .Card-Link {
+        font-size: 25px;
+    }
+    
+    .Title-Text {
+        font-size: 75px;
+    }
+    
+    .Title-Description {
+        font-size: 50px;
+    }
+}

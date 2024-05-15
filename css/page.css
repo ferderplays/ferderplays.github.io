@@ -1,0 +1,185 @@
+
+@import url("https://fonts.cdnfonts.com/css/minecraft-evenings");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Kenia&family=Zen+Kurenaido&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-one: white;
+    --color-two: lime;
+    --color-three: rgb(50, 50, 50);
+    --color-four: rgb(0, 125, 0);
+
+    --font-one: "Zen Kurenaido", sans-serif;
+    --font-two: "Minecraft Evenings";
+
+    --shadow-one: rgb(200, 200, 200);
+}
+
+body {
+    font-family: var(--font-one);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background: url(../files/pics/bg.png) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header, .header a, .header-btn i {
+    color: var(--color-two);
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+
+.header.fixed {
+    position: fixed;
+    top: 0;
+    background: var(--color-two);
+    color: var(--color-one);
+}
+
+.fixed a, .fixed i {
+    color: var(--color-one);
+}
+
+.logo {
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.header a {
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.header-btn {
+    background: transparent;
+    width: 50px;
+    font-size: 25px;
+    border: none;
+}
+
+.title-cont {
+    position: absolute;
+    top: 50px;
+    height: 800px;
+    width: 100%;
+}
+
+.title, .subtitle {
+    text-align: center;
+    color: var(--color-two);
+}
+
+.title {
+    font-size: 80px;
+    font-family: var(--font-two);
+}
+
+.about-cont {
+    position: absolute;
+    top: 850px;
+    width: 100%;
+    background: var(--color-one);
+}
+
+h3 {
+    font-size: 35px;
+}
+
+.about-par {
+    font-size: 30px;
+}
+
+.techs-cont {
+    width: 100%;
+    background: var(--color-two);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-cont {
+    display: grid;
+    align-self: center;
+    grid-template-columns: repeat(2, 500px);
+    gap: 25px;
+    grid-template-rows: repeat(2, 500px);
+    height: 1200px;
+}
+
+.card {
+    box-shadow: 5px 5px 10px var(--color-four);
+    border-radius: 25px;
+    text-align: left;
+    background: var(--color-one);
+    padding: 20px;
+}
+
+li {
+    font-size: 30px;
+}
+
+.fa-vuejs {
+    color: #41B883;
+}
+
+.fa-reacteurope {
+    color: #61DBFB;
+}
+
+.fa-css3-alt {
+    color: #264de4;
+}
+
+.fa-html5 {
+    color: #f06529;
+}
+
+.fa-square-js {
+    color: #f0db4f;
+}
+
+.fa-node {
+    color: #68a063;
+}
+
+.fa-clipboard-question {
+    color: #78cff5;
+}
+
+.axaml {
+    color: #C2A5D0;
+}
+
+.fxml {
+    color: #f89820;
+}
+
+.fa-java {
+    color: #ED1D25;
+}
+
+.fa-c {
+    color: #823085;
+}
+
+.projects-cont {
+    position: absolute;
+    top: calc(1560px + 850px + 150);
+}
