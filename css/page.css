@@ -181,5 +181,5 @@ li {
 
 .projects-cont {
     position: absolute;
-    top: calc(1560px + 850px + 150);
+    top: calc(1560px + 850px + 150px);
 }
