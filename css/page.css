@@ -48,6 +48,7 @@ body {
     top: 0;
     background: var(--color-two);
     color: var(--color-one);
+    z-index: 2;
 }
 
 .fixed a, .fixed i {
@@ -63,8 +64,14 @@ body {
 .header a {
     display: inline-block;
     text-decoration: none;
+    font-weight: bold;
     padding-left: 30px;
     padding-right: 30px;
+    transition: all 0.5s;
+}
+
+.fixed a:hover {
+    color: gold;
 }
 
 .header-btn {
