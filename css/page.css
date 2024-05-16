@@ -16,6 +16,8 @@
     --font-two: "Minecraft Evenings";
 
     --shadow-one: rgb(200, 200, 200);
+    --shadow-two: rgb(10, 10, 10);
+    --shadow-three: rgb(0, 50, 0);
 }
 
 html {
@@ -202,7 +204,7 @@ li {
 }
 
 .project {
-    box-shadow: 5px 5px 10px rgb(100, 100, 100);
+    box-shadow: 5px 5px 10px var(--shadow-one);
 }
 
 .card a {
@@ -248,4 +250,34 @@ li {
 
 .space {
     height: 150px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: var(--color-one);
+    }
+
+    .about-cont, .card {
+        background: var(--color-three);
+    }
+
+    .techs-cont, .social-cont, .header.fixed {
+        background: var(--color-four);
+    }
+
+    .title, .subtitle, .header a, .card a {
+        color: var(--color-four);
+    }
+    
+    .card {
+        box-shadow: 5px 5px 10px var(--shadow-three);
+    }
+
+    .project {
+        box-shadow: 5px 5px 10px var(--shadow-two);
+    }
+
+    .fixed a {
+        color: var(--color-three);
+    }
 }
