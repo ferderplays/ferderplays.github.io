@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    $(".age").text("15")
+    $(".age").text("16")
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://api.countapi.xyz/hit/website.ferder.repl.co/visits");
     xhr.responseType = "json";

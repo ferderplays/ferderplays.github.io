@@ -2,6 +2,16 @@
 @import url("https://fonts.cdnfonts.com/css/minecraft-evenings");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Kenia&family=Zen+Kurenaido&display=swap");
 
+@font-face {
+    font-family: "Thuluth";
+    src: url(../fonts/A\ Thuluth\ Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Arabic';
+    src: url(../fonts/NotoSansArabic-VariableFont_wdth\,wght.ttf);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -18,6 +28,14 @@
     --shadow-one: rgb(200, 200, 200);
     --shadow-two: rgb(10, 10, 10);
     --shadow-three: rgb(0, 50, 0);
+}
+
+.lat {
+    font-family: var(--font-one);
+}
+
+.ar {
+    font-family: 'Arabic';
 }
 
 html {
@@ -250,6 +268,42 @@ li {
 
 .space {
     height: 150px;
+}
+
+.arabic {
+    font-family: "Arabic";
+    /*font-size: 60px;*/
+    text-align: right;
+}
+
+.arabic .title {
+    font-family: "Thuluth";
+    font-size: 80px;
+}
+
+.arabic .header {
+    padding-top: 0px;
+    height: 65px;
+}
+
+.arabic h3 {
+    font-size: 55px;
+}
+
+.arabic .about-par {
+    /*font-size: 50px;*/
+}
+
+.arabic .card-cont {
+    grid-template-columns: repeat(2, 700px);
+    grid-template-rows: repeat(2, 700px);
+    height: 1600px;
+}
+
+.arabic .socials-cont {
+    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: repeat(1, 700px);
+    height: 850px;
 }
 
 @media (prefers-color-scheme: dark) {
