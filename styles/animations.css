@@ -1,0 +1,23 @@
+header li a:hover {
+    color: black;
+}
+
+.projects-grid > div:hover, .calligraphy-grid > div:hover, .socials-grid > div:hover {
+    background: black;
+    color: silver;
+    border-radius: 0;
+}
+
+.tech-grid > div:hover h4, .projects-grid > div:hover h4, .calligraphy-grid > div:hover h4, .socials-grid > div:hover h4 {
+    color: #0bda51;
+}
+
+.tech-grid > div:hover .link, .projects-grid > div:hover .link, .calligraphy-grid > div:hover .link, .socials-grid > div:hover .link {
+    color: #0bda51;
+}
+
+.tech-grid > div:hover {
+    background: silver;
+    color: white;
+    border-radius: 0;
+}
