@@ -1,182 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-
-@font-face {
-    font-family: 'Arabic Script';
-    src: url(../fonts/A\ Arslan\ Wessam\ B\ A\ Arslan\ Wessam\ B.ttf);
+:root {
+    --color-a: #0bda51;
+    --color-b: #006400;
+    --color-c: #3fff00; 
 }
 
-html, body {
+html {
     scroll-behavior: smooth;
 }
 
-body {
-    margin: 0;
+body, html {
     padding: 0;
     height: 100%;
+    margin: 0;
     width: 100%;
-    font-family: 'Jost', sans-serif;
-    background: black;
-    color: #0bda51;
+    word-break: break-all;
 }
 
-.page.ar {
-    font-family: 'Arabic Script', sans-serif;
-    text-align: right;
-}
-
-.page.ar h1 {
-    font-size: 100px;
-}
-
-.page.ar h2 {
-    font-size: 75px;
-}
-
-.page.ar h3 {
-    font-size: 50px;
-}
-
-.page.ar h4 {
-    font-size: 40px;
-}
-
-.page.ar p, .page.ar li {
-    font-size: 35px;
-}
-
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
+    padding: 0;
     margin: 0;
 }
 
-h1 {
-    font-size: 75px;
-}
-
-h2 {
-    font-size: 50px;
-}
-
-h3 {
-    font-size: 40px;
-}
-
-h4 {
-    font-size: 35px;
-}
-
-p, li {
-    font-size: 25px;
+body {
+    background: radial-gradient(circle at top left,rgba(11, 218, 81, 1) 35%, rgba(63, 255, 0, 1) 55%, rgba(63, 255, 0, 1) 65%, rgba(0, 100, 0, 1) 85%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Jost', sans-serif;
+    height: fit-content;
+    overflow-x: hidden;
 }
 
 header {
     position: sticky;
     top: 0;
-    justify-content: space-between;
-}
-
-header, .projects-grid, .tech-grid > div, .projects-grid > div, .calligraphy-grid > div, .socials-grid > div {
+    padding-top: 5px;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: black;
+    z-index: 2;
 }
 
-.title-container, .tech-grid > div h4, .projects-grid > div h4, .calligraphy-grid > div h4, .socials-grid > div h4, footer {
+nav {
+    height: fit-content;
+}
+
+.link {
+    position: relative;
+    top: 12px;
+    background: radial-gradient(circle at top left,rgba(11, 218, 81, 1) 35%, rgba(63, 255, 0, 1) 55%, rgba(63, 255, 0, 1) 65%, rgba(0, 100, 0, 1) 85%);
+    transition: all 0.25s ease-in-out;
+    background-color: var(--color-b);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    padding: 10px;
+    height: 50px;
+    color: black;
+}
+
+.link:hover {
+    background-position: -500px 0;
+    background-size: 100% 100%;
+}
+
+h1, h2 {
+    padding: 50px;
     text-align: center;
 }
 
-.tech-grid, .projects-grid, .calligraphy-grid, .socials-grid {
-    justify-content: space-evenly;
+h1 {
+    font-size: 40vh;
+    font-weight: 900;
+    color: black;
+    padding-bottom: 0;
 }
 
-.projects-grid > div, .calligraphy-grid > div, .socials-grid > div {
+h2 {
+    padding-top: 0;
+    font-size: 15vh;
+    font-weight: 700;
+    color: black;
+}
+
+.about-container, .projects-container {
+    background: black;
+    padding-top: 50px;
+    color: var(--color-c);
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 10vh;
+}
+
+p {
+    font-size: 5vh;
+}
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
     align-items: center;
 }
 
-.tech-grid > div, .projects-grid > div, .calligraphy-grid > div, .socials-grid > div {
-    color: black;
-    padding: 10px;
-    border: 2px solid;
-    border-radius: 20px;
-    border-color: #0bda51;
+.timeline-container h3 {
+    padding-bottom: 50px;
+}
+
+.projects-grid {
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-.tech-grid > div h4, .projects-grid > div h4, .calligraphy-grid > div h4, .socials-grid > div h4 {
-    color: white;
-}
-
-header, .tech-grid > div, .projects-grid > div, .calligraphy-grid > div, .socials-grid > div, footer {
-    background: #0bda51;
-}
-
-header li {
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-header a {
-    color: white;
-    text-decoration: none;
-}
-
-header li a {
-    color: white;
-}
-
-header li a, .projects-grid > div, .tech-grid > div, .calligraphy-grid > div, .socials-grid > div {
-    transition: all 0.25s ease-in-out;
-}
-
-.bg-silver {
-    background: silver;
-}
-
-.tech-grid, .projects-grid, .calligraphy-grid {
-    gap: 25px;
-}
-
-.tech-grid, .calligraphy-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 500px);
-    grid-template-rows: repeat(2, fit-content);
-}
-
-.title-container {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.tech-grid {
-    padding-top: 5px;
-    padding-bottom: 25px;
+    align-items: center;
+    padding: 25px;
+    gap: 50px;
 }
 
 .projects-grid div {
-    width: 500px;
+    box-shadow: 10px 10px 15px var(--color-b);
+    color: var(--color-b);
+    border-radius: 25px;
+    transition: all 0.25s ease-in-out;
 }
 
-.socials-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 18%);
+.projects-grid div:hover {
+    box-shadow: 10px 10px 15px var(--color-c);
+    color: var(--color-c);
 }
 
 footer {
-    color: white;
-    font-size: 30px;
-    height: 50px;
+    text-align: center;
 }
 
-.space {
-    height: 50px;
-}
+@media screen and (max-width: 1000px) {
+    header {
+        height: max-content;
+    }
 
-a.link {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 25px;
+    h1 {
+        font-size: 20vh;
+    }
+
+    h2 {
+        font-size: 7.5vh;
+    }
+
+    h3 {
+        font-size: 5vh;
+    }
+
+    p {
+        font-size: 2.5vh;
+    }
 }

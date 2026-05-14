@@ -3,156 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ferdis's Website</title>
+    <title>Ferdis' Website</title>
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/animations.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="page" id="pagetop">
-        <header>
-            <a href="/"><h3>Ferdis</h3></a>
-            <ul>
-                <li><a href="#pagetop">Page top</a></li>
-                <li><a href="#aboutme">About Me</a></li>
-                <li><a href="#technologies">Technologies</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#calligraphy">Calligraphy</a></li>
-                <li><a href="#socials">Socials</a></li>
-            </ul>
-        </header>
-        <div class="title-container">
+    <header>
+        <a href="/">
+            <img src="./assets/lightning.svg" alt="Banner logo" height="50">
+        </a>
+        <nav>
+            <a href="#top" class="link">Top</a>
+            <a href="#timeline" class="link">Timeline</a>
+            <a href="#projects" class="link">Projects</a>
+        </nav>
+        <nav>
+            <a href="https://github.com/ferderplays" class="link">Github</a>
+            <a href="https://www.youtube.com/@justferdis" class="link">Youtube</a>
+        </nav>
+    </header>
+    <main>
+        <div class="title-container" id="top">
             <h1>Ferdis</h1>
-            <h2>A christian web developer, minecraft player, and a tiny youtuber</h2>
+            <h2>Web developer</h2>
         </div>
-        <div class="space"></div>
-        <div class="section" id="aboutme">
-            <h3>About me</h3>
-            <p>I am a <span class="age"></span> year old compsci student, who does web development in his free time, I do calligraphy (Blackletter, Arabic, and Hebrew), I also play games, mostly Minecraft and Roblox. I am from the Czech Republic, a country in central Europe. I am also interested in Calligraphy and fonts. Ive been interested in compsci for a few years by now, so here is my website</p>
+        <div class="about-container">
+            <h3>A short introduction</h3>
+            <p>I am a 17 year old web developer and computer science student from the Czech Republic, which is a country in central Europe. I am currently still studying, while also working on web projects, java projects, and more, which when complete will be on my github. I am interested in pro-european liberal politics, languages, cultures, and theology.</p>
         </div>
-        <div class="space"></div>
-        <div class="section bg-silver" id="technologies">
-            <h3>Technologies I work with</h3>
-            <p>Over the years, when I have been interested in Computer Science, I have worked with many technologies. Here is the list of ones I worked with a lot:</p>
-            <div class="tech-grid">
-                <div>
-                    <h4>Web development</h4>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>React JS</li>
-                        <li>Vue JS</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Web development - scripts</h4>
-                    <ul>
-                        <li>JQuery</li>
-                        <li>Node.JS</li>
-                        <li>Javascript</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Desktop app development</h4>
-                    <ul>
-                        <li>Avalonia UI</li>
-                        <li>WPF</li>
-                        <li>JavaFX</li>
-                        <li>Java Swing</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Desktop app development - backend</h4>
-                    <ul>
-                        <li>Java</li>
-                        <li>C#</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="timeline-container" id="timeline">
+            <h3>A simplified timeline of my coding journey</h3>
+            <img src="./assets/timeline-coding.svg" alt="my coding timeline" width="75%">
         </div>
-        <div class="space"></div>
-        <div class="section" id="projects">
+        <div class="projects-container" id="projects">
             <h3>My projects</h3>
-            <p>Over the years I have been creating projects for the purposes of learning to code, here are some examples:</p>
             <div class="projects-grid">
                 <div>
-                    <h4>This website</h4>
-                    <p>This is currently my longest continous project, made with just HTML, CSS, JS and a sense of design</p>
-                    <a href="/" class="link">Click here</a>
+                    <h3>This website</h3>
+                    <p>I made this website in HTML, CSS, and Javascript</p>
                 </div>
-                <div>
-                    <h4>Bible Online</h4>
-                    <p>I am currently working on a online bible, with full visual customization ability. It is being created in HTML, Javascript and CSS</p>
-                    <a href="https://ferderplays.github.io/bibleonline/bible/" class="link">Click here</a>
-                </div>
-            </div>
-            <p>For more examples please visit my Github.</p>
-        </div>
-        <div class="space"></div>
-        <div class="section" id="calligraphy">
-            <h3>Calligraphy</h3>
-            <p>Since 2022 I have been interested in making calligraphy, now I am no expert in it yet, but I do still try to get better.</p>
-            <div class="calligraphy-grid">
-                <div>
-                    <h4>Blackletter</h4>
-                    <p>For arround a few years I have been interested in black letter, specifically the Fraktur script, check out my instagram if you want to see my works</p>
-                    <a href="https://www.instagram.com/ferdisishere/" class="link">Click here</a>
-                </div>
-                <div>
-                    <h4>Biblical Calligraphy - Arabic</h4>
-                    <p>For arround a few years I have been interested in Arabic calligraphy, specifically the Thuluth script, check out my instagram if you want to see my works</p>
-                    <a href="https://www.instagram.com/ferdisishere/" class="link">Click here</a>
-                </div>
-                <div>
-                    <h4>Biblical Calligraphy - Hebrew</h4>
-                    <p>For arround a few years I have been interested in Hebrew calligraphy, specifically the modern hebrew script, check out my instagram if you want to see my works</p>
-                    <a href="https://www.instagram.com/ferdisishere/" class="link">Click here</a>
-                </div>
-                <div>
-                    <h4>Biblical Calligraphy - Greek</h4>
-                    <p>For arround a few years I have been interested in Greek calligraphy, check out my instagram if you want to see my works</p>
-                    <a href="https://www.instagram.com/ferdisishere/" class="link">Click here</a>
+                <div class="last-row">
+                    <h3>LIMO Browser</h3>
+                    <p>A web browser I made in C#</p>
                 </div>
             </div>
         </div>
-        <div class="space"></div>
-        <div class="section" id="socials">
-            <h3>My socials</h3>
-            <p>All social media pages that I own, and am active on</p>
-            <div class="socials-grid">
-                <div>
-                    <h4>Youtube</h4>
-                    <p>Where I post gaming videos</p>
-                    <a href="https://www.youtube.com/@ferdisishere" class="link">Click here</a>
-                </div>
-                <div>
-                    <h4>Tiktok</h4>
-                    <p>Where I post stuff about politics, and other stuff</p>
-                    <a href="https://www.tiktok.com/@ferdisishere" class="link">Click here</a>
-                </div>
-                <div>
-                    <h4>Instagram</h4>
-                    <p>Where I post calligraphy and other stuff</p>
-                    <a href="https://www.instagram.com/ferdisishere/" class="link">Click here</a>
-                </div>
-                <div>
-                    <h4>Discord</h4>
-                    <p>Where you can ask me questions, or talk to me</p>
-                    <a href="https://discord.gg/mjQGEtYShM" class="link">Click here</a>
-                </div>
-            </div>
-        </div>
-        <div class="space"></div>
-        <footer>
-            <p>Created by Ferdis, source code available on Github</p>
-        </footer>
-    </div>
-    <script>
-        const age = 17;
-
-        $(document).ready(function() {
-            $(".age").text(age);
-        });
-    </script>
+    </main>
+    <footer>
+        <h3>Made by Ferdis in 2026</h3>
+    </footer>
 </body>
 </html>
