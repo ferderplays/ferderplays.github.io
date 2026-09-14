@@ -1,166 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --minimal-font-size: 45px;
+}
 
 * {
     box-sizing: border-box;
-}
-
-:root {
-    --color-a: #0bda51;
-    --color-b: #006400;
-    --color-c: #3fff00; 
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-body, html {
+html, body {
     padding: 0;
+    margin: 0;
     height: 100%;
-    margin: 0;
     width: 100%;
-    word-break: break-all;
-}
-
-h1, h2, h3, h4, h5 {
-    padding: 0;
-    margin: 0;
 }
 
 body {
-    background: radial-gradient(circle at top left,rgba(11, 218, 81, 1) 35%, rgba(63, 255, 0, 1) 55%, rgba(63, 255, 0, 1) 65%, rgba(0, 100, 0, 1) 85%);
+    background: url(../images/desktop_wallpaper.jpg) no-repeat center;
+    background-size: cover;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    font-family: 'Jost', sans-serif;
-    height: fit-content;
-    overflow-x: hidden;
-}
-
-header {
-    position: sticky;
-    top: 0;
-    padding-top: 5px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background: black;
-    z-index: 2;
-}
-
-nav {
-    height: fit-content;
-}
-
-.link {
-    position: relative;
-    top: 12px;
-    background: radial-gradient(circle at top left,rgba(11, 218, 81, 1) 35%, rgba(63, 255, 0, 1) 55%, rgba(63, 255, 0, 1) 65%, rgba(0, 100, 0, 1) 85%);
-    transition: all 0.25s ease-in-out;
-    background-color: var(--color-b);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: bold;
-    padding: 10px;
-    height: 50px;
-    color: black;
-}
-
-.link:hover {
-    background-position: -500px 0;
-    background-size: 100% 100%;
-}
-
-h1, h2 {
-    padding: 50px;
+    font-family: 'Chivo', sans-serif;
+    font-size: var(--minimal-font-size);
     text-align: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+h1, h2, h3 {
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
-    font-size: 40vh;
-    font-weight: 900;
-    color: black;
-    padding-bottom: 0;
+    font-size: 10vw;
+    color: var(--accent);
 }
 
 h2 {
-    padding-top: 0;
-    font-size: 15vh;
-    font-weight: 700;
-    color: black;
+    font-size: 5vw;
 }
 
-.about-container, .projects-container {
-    background: black;
-    padding-top: 50px;
-    color: var(--color-c);
-    padding-bottom: 50px;
-    text-align: center;
+body > div {
+    padding: 25px;
+    background: rgb(50, 50, 50);
+    border: 10px solid;
+    color:rgb(0, 205, 0);
+    border-radius: 25px;
+    animation: flag 3s ease-in-out 0s infinite alternate;
+    max-width: 80vw;
 }
 
-h3 {
-    font-size: 10vh;
+.space {
+    height: 100px;
+}
+
+h1, .projects h2 {
+    color: inherit;
+}
+
+h2 {
+    color: white;
 }
 
 p {
-    font-size: 5vh;
+    color: white;
 }
 
-.timeline-container {
+.projects {
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    align-items: center;
 }
 
-.timeline-container h3 {
-    padding-bottom: 50px;
-}
-
-.projects-grid {
+.projects-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 25px;
-    gap: 50px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.projects-grid div {
-    box-shadow: 10px 10px 15px var(--color-b);
-    color: var(--color-b);
+.projects-container > div {
+    height: 500px;
+    width: 500px;
+    border: 10px solid;
+    border-color: inherit;
     border-radius: 25px;
-    transition: all 0.25s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.projects-grid div:hover {
-    box-shadow: 10px 10px 15px var(--color-c);
-    color: var(--color-c);
+@keyframes flag {
+    0% {
+        color: #00cd00;
+        border-color: #00cd00;
+    }
+    25% {
+        color: #ffc800;
+        border-color: #ffc800;
+    }
+    50% {
+        color: #cd0000;
+        border-color: #cd0000;
+    }
+    75% {
+        color: #ffc800;
+        border-color: #ffc800;
+    }
+    100% {
+        color: #00cd00;
+        border-color: #00cd00;
+    }
 }
 
-footer {
-    text-align: center;
+::-webkit-scrollbar {
+    background: white;
 }
 
-@media screen and (max-width: 1000px) {
-    header {
-        height: max-content;
-    }
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 205, 0);
+}
 
-    h1 {
-        font-size: 20vh;
-    }
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
-    h2 {
-        font-size: 7.5vh;
+@media screen and (max-width: 700px) {
+    :root {
+        --minimal-font-size: 25px;
     }
+}
 
-    h3 {
-        font-size: 5vh;
-    }
-
-    p {
-        font-size: 2.5vh;
+@media screen and (max-width: 300px) {
+    :root {
+        --minimal-font-size: 10px;
     }
 }
